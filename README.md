@@ -5,7 +5,7 @@ A copy of the code used to analyze the bulkRNAseq for the fusion data generated 
 Data key:
 
 ## Parental1 
-1-RNAseq-library-pool-Siqing-10062022_S1_R1_001.fastq.gz	
+1-RNAseq-library-pool-Siqing-10062022_S1_R1_001.fastq.gz	\n
 1-RNAseq-library-pool-Siqing-10062022_S1_R2_001.fastq.gz	
 ## Parental2
 2-RNAseq-library-pool-Siqing-10062022_S4_R1_001.fastq.gz	
