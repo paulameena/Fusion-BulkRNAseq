@@ -1,0 +1,45 @@
+---
+title: "Fusion BulkRNA-seq"
+author: "Paulameena Shultes"
+date: "2024-07-10"
+output: pdf_document
+---
+Bioc
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(DESeq2)
+library(readr)
+```
+
+## Load the Data
+
+```{r cars}
+parental1 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_1/1ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+parental2 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_2/0ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+parental3 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_3/1ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+resistant1 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_4/2ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+resistant2 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_5/3ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+resistant3 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_6/4ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+fused1 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_7/5ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+fused2 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_8/6ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+fused3 <- read_delim("/Volumes/scottj10lab/Fusion_Team/read_counts/Sample_9/7ReadsPerGene.out.tab", delim = "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
